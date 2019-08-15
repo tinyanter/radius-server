@@ -1,0 +1,12 @@
+{
+  "logFileName": "/var/log/boost/platform-radius",
+  "errorPath": "/error",
+  "errorFileName": "error",
+  "responsePath": "/response",
+  "responseFileName": "response",
+  "warnPath": "/warn",
+  "warnFileName": "warn",
+  "pattern": "-yyyy-MM-dd-hh.log",
+  "maxLogSize": 10240,
+  "reportServer": "http://proxy.boost.crzstone.com:21010"
+}

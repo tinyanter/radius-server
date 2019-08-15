@@ -1,0 +1,43 @@
+{
+  "radius": {
+    "secret": "ooo",
+    "port": {
+      "authPort": 1812,
+      "accPort": 1813,
+      "coaPort": 3799
+    }
+  },
+  "radiusCenter": {
+    "ip": "47.95.46.128",
+    "port": 21012,
+    "auth": "http://authentication-host-ip:21012/radiusCenter/tokenAuth",
+    "online": "http://authentication-host-ip:21012/radiusCenter/online",
+    "offline": "http://authentication-host-ip:21012/radiusCenter/offline"
+  },
+  "tokenSecret": "jsjKJSDLFJ83930)*&^%k90i348903458903458",
+  "queuePath": "/data/",
+  "accountingDataPush": "http://account-host-ip:21005/accounting/push",
+  "api": {
+    "querylastRecharge": "http://passport-host-ip:21010/radius/querylastRechargeByRadiusToken"
+  },
+  "limitRate": {
+    "cds": "1024k 4096k 1536k 16",
+    "appexUpstream": "1600",
+    "appexDownstream": "1600"
+  },
+  "deducationUnit": 900,
+  "list": {
+    "loginList": "loginRetry",
+    "acctList": "accounting",
+    "index": "listIndex",
+    "timeOut": 5000
+  },
+  "acctInterval": 120,
+  "monitorInterval": 10,
+  "unlimitedRateList": [],
+  "pouchDB": {
+    "path": "http://39.106.147.23:3000/radius",
+    "user": "admin",
+    "password": "q123456"
+  }
+}
