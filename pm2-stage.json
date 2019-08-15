@@ -1,0 +1,12 @@
+[
+        {
+            "name": "platform-radius-stage",
+            "script": "./main.js",
+            "cwd": "./output", // 指定该app工作目录，这样pm2会相对这个目录去找脚本之类的。
+            "env": {
+                "NODE_ENV": "stage"
+            },
+            "merge_logs"      : true,
+            "log_date_format" : "YYYY-MM-DD HH:mm Z"
+        }
+    ]

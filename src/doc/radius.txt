@@ -1,0 +1,232 @@
+--< Access-Request
+{ code: 'Access-Request',
+  identifier: 137,
+  length: 69,
+  authenticator: <Buffer bc 4b 3e bc 14 bc 7e dc 97 71 c9 54 78 9b 3a 92>,
+  attributes: 
+   { 'Service-Type': 'Framed-User',
+     'Framed-Protocol': 'PPP',
+     'User-Name': 'steve',
+     'User-Password': 'testing',
+     'NAS-IP-Address': '127.0.0.1',
+     'NAS-Port': 0 },
+  raw_attributes: 
+   [ [ 6, <Buffer 00 00 00 02> ],
+     [ 7, <Buffer 00 00 00 01> ],
+     [ 1, <Buffer 73 74 65 76 65> ],
+     [ 2, <Buffer 21 10 bd c3 ee b6 c3 ca ad d9 9c ca bd 58 30 23> ],
+     [ 4, <Buffer 7f 00 00 01> ],
+     [ 5, <Buffer 00 00 00 00> ] ] }
+     
+
+
+--< Accounting-Request
+{ code: 'Accounting-Request',
+  identifier: 138,
+  length: 97,
+  authenticator: <Buffer 8e 75 c3 7e c6 fc d4 99 ec 22 82 67 2a 98 8a e9>,
+  attributes: 
+   { 'Acct-Session-Id': '5A016F1E36D600',
+     'User-Name': 'steve',
+     'Acct-Status-Type': 'Start',
+     'Service-Type': 'Framed-User',
+     'Framed-Protocol': 'PPP',
+     'Acct-Authentic': 'RADIUS',
+     'NAS-Port-Type': 'Async',
+     'Framed-IP-Address': '192.168.111.128',
+     'NAS-IP-Address': '127.0.0.1',
+     'NAS-Port': 0,
+     'Acct-Delay-Time': 0 },
+  raw_attributes: 
+   [ [ 44, <Buffer 35 41 30 31 36 46 31 45 33 36 44 36 30 30> ],
+     [ 1, <Buffer 73 74 65 76 65> ],
+     [ 40, <Buffer 00 00 00 01> ],
+     [ 6, <Buffer 00 00 00 02> ],
+     [ 7, <Buffer 00 00 00 01> ],
+     [ 45, <Buffer 00 00 00 01> ],
+     [ 61, <Buffer 00 00 00 00> ],
+     [ 8, <Buffer c0 a8 6f 80> ],
+     [ 4, <Buffer 7f 00 00 01> ],
+     [ 5, <Buffer 00 00 00 00> ],
+     [ 41, <Buffer 00 00 00 00> ] ] }
+-->Accounting-Response
+
+
+
+
+
+
+
+
+--< Accounting-Request
+{ code: 'Accounting-Request',
+  identifier: 139,
+  length: 127,
+  authenticator: <Buffer 6a d2 1e 76 57 8a 88 b1 72 19 9c 08 f0 bf 44 e5>,
+  attributes: 
+   { 'Acct-Session-Id': '5A016F1E36D600',
+     'User-Name': 'steve',
+     'Acct-Status-Type': 'Interim-Update',
+     'Service-Type': 'Framed-User',
+     'Framed-Protocol': 'PPP',
+     'Acct-Authentic': 'RADIUS',
+     'Acct-Session-Time': 60,
+     'Acct-Output-Octets': 0,
+     'Acct-Input-Octets': 31223,
+     'Acct-Output-Packets': 0,
+     'Acct-Input-Packets': 225,
+     'NAS-Port-Type': 'Async',
+     'Framed-IP-Address': '192.168.111.128',
+     'NAS-IP-Address': '127.0.0.1',
+     'NAS-Port': 0,
+     'Acct-Delay-Time': 0 },
+  raw_attributes: 
+   [ [ 44, <Buffer 35 41 30 31 36 46 31 45 33 36 44 36 30 30> ],
+     [ 1, <Buffer 73 74 65 76 65> ],
+     [ 40, <Buffer 00 00 00 03> ],
+     [ 6, <Buffer 00 00 00 02> ],
+     [ 7, <Buffer 00 00 00 01> ],
+     [ 45, <Buffer 00 00 00 01> ],
+     [ 46, <Buffer 00 00 00 3c> ],
+     [ 43, <Buffer 00 00 00 00> ],
+     [ 42, <Buffer 00 00 79 f7> ],
+     [ 48, <Buffer 00 00 00 00> ],
+     [ 47, <Buffer 00 00 00 e1> ],
+     [ 61, <Buffer 00 00 00 00> ],
+     [ 8, <Buffer c0 a8 6f 80> ],
+     [ 4, <Buffer 7f 00 00 01> ],
+     [ 5, <Buffer 00 00 00 00> ],
+     [ 41, <Buffer 00 00 00 00> ] ] }
+-->Accounting-Response
+
+
+
+--< Accounting-Request
+{ code: 'Accounting-Request',
+  identifier: 140,
+  length: 127,
+  authenticator: <Buffer 14 bb 6c 6f 34 d8 57 97 07 b4 8a bb b8 f8 de 36>,
+  attributes: 
+   { 'Acct-Session-Id': '5A016F1E36D600',
+     'User-Name': 'steve',
+     'Acct-Status-Type': 'Interim-Update',
+     'Service-Type': 'Framed-User',
+     'Framed-Protocol': 'PPP',
+     'Acct-Authentic': 'RADIUS',
+     'Acct-Session-Time': 120,
+     'Acct-Output-Octets': 0,
+     'Acct-Input-Octets': 35601,
+     'Acct-Output-Packets': 0,
+     'Acct-Input-Packets': 290,
+     'NAS-Port-Type': 'Async',
+     'Framed-IP-Address': '192.168.111.128',
+     'NAS-IP-Address': '127.0.0.1',
+     'NAS-Port': 0,
+     'Acct-Delay-Time': 0 },
+  raw_attributes: 
+   [ [ 44, <Buffer 35 41 30 31 36 46 31 45 33 36 44 36 30 30> ],
+     [ 1, <Buffer 73 74 65 76 65> ],
+     [ 40, <Buffer 00 00 00 03> ],
+     [ 6, <Buffer 00 00 00 02> ],
+     [ 7, <Buffer 00 00 00 01> ],
+     [ 45, <Buffer 00 00 00 01> ],
+     [ 46, <Buffer 00 00 00 78> ],
+     [ 43, <Buffer 00 00 00 00> ],
+     [ 42, <Buffer 00 00 8b 11> ],
+     [ 48, <Buffer 00 00 00 00> ],
+     [ 47, <Buffer 00 00 01 22> ],
+     [ 61, <Buffer 00 00 00 00> ],
+     [ 8, <Buffer c0 a8 6f 80> ],
+     [ 4, <Buffer 7f 00 00 01> ],
+     [ 5, <Buffer 00 00 00 00> ],
+     [ 41, <Buffer 00 00 00 00> ] ] }
+-->Accounting-Response
+
+
+
+
+
+--< Accounting-Request
+{ code: 'Accounting-Request',
+  identifier: 141,
+  length: 127,
+  authenticator: <Buffer a0 50 a4 84 c1 74 13 ed 76 a4 16 86 a0 50 94 d8>,
+  attributes: 
+   { 'Acct-Session-Id': '5A016F1E36D600',
+     'User-Name': 'steve',
+     'Acct-Status-Type': 'Interim-Update',
+     'Service-Type': 'Framed-User',
+     'Framed-Protocol': 'PPP',
+     'Acct-Authentic': 'RADIUS',
+     'Acct-Session-Time': 180,
+     'Acct-Output-Octets': 0,
+     'Acct-Input-Octets': 35601,
+     'Acct-Output-Packets': 0,
+     'Acct-Input-Packets': 290,
+     'NAS-Port-Type': 'Async',
+     'Framed-IP-Address': '192.168.111.128',
+     'NAS-IP-Address': '127.0.0.1',
+     'NAS-Port': 0,
+     'Acct-Delay-Time': 0 },
+  raw_attributes: 
+   [ [ 44, <Buffer 35 41 30 31 36 46 31 45 33 36 44 36 30 30> ],
+     [ 1, <Buffer 73 74 65 76 65> ],
+     [ 40, <Buffer 00 00 00 03> ],
+     [ 6, <Buffer 00 00 00 02> ],
+     [ 7, <Buffer 00 00 00 01> ],
+     [ 45, <Buffer 00 00 00 01> ],
+     [ 46, <Buffer 00 00 00 b4> ],
+     [ 43, <Buffer 00 00 00 00> ],
+     [ 42, <Buffer 00 00 8b 11> ],
+     [ 48, <Buffer 00 00 00 00> ],
+     [ 47, <Buffer 00 00 01 22> ],
+     [ 61, <Buffer 00 00 00 00> ],
+     [ 8, <Buffer c0 a8 6f 80> ],
+     [ 4, <Buffer 7f 00 00 01> ],
+     [ 5, <Buffer 00 00 00 00> ],
+     [ 41, <Buffer 00 00 00 00> ] ] }
+-->Accounting-Response
+
+
+--< Accounting-Request
+{ code: 'Accounting-Request',
+  identifier: 142,
+  length: 133,
+  authenticator: <Buffer 8f d5 50 6a 50 38 7e 7a 8a 68 0c 72 56 fe b0 94>,
+  attributes: 
+   { 'Acct-Session-Id': '5A016F1E36D600',
+     'User-Name': 'steve',
+     'Acct-Status-Type': 'Stop',
+     'Service-Type': 'Framed-User',
+     'Framed-Protocol': 'PPP',
+     'Acct-Authentic': 'RADIUS',
+     'Acct-Session-Time': 213,
+     'Acct-Output-Octets': 0,
+     'Acct-Input-Octets': 35601,
+     'Acct-Output-Packets': 0,
+     'Acct-Input-Packets': 290,
+     'NAS-Port-Type': 'Async',
+     'Acct-Terminate-Cause': 'User-Request',
+     'Framed-IP-Address': '192.168.111.128',
+     'NAS-IP-Address': '127.0.0.1',
+     'NAS-Port': 0,
+     'Acct-Delay-Time': 0 },
+  raw_attributes: 
+   [ [ 44, <Buffer 35 41 30 31 36 46 31 45 33 36 44 36 30 30> ],
+     [ 1, <Buffer 73 74 65 76 65> ],
+     [ 40, <Buffer 00 00 00 02> ],
+     [ 6, <Buffer 00 00 00 02> ],
+     [ 7, <Buffer 00 00 00 01> ],
+     [ 45, <Buffer 00 00 00 01> ],
+     [ 46, <Buffer 00 00 00 d5> ],
+     [ 43, <Buffer 00 00 00 00> ],
+     [ 42, <Buffer 00 00 8b 11> ],
+     [ 48, <Buffer 00 00 00 00> ],
+     [ 47, <Buffer 00 00 01 22> ],
+     [ 61, <Buffer 00 00 00 00> ],
+     [ 49, <Buffer 00 00 00 01> ],
+     [ 8, <Buffer c0 a8 6f 80> ],
+     [ 4, <Buffer 7f 00 00 01> ],
+     [ 5, <Buffer 00 00 00 00> ],
+     [ 41, <Buffer 00 00 00 00> ] ] }
+-->Accounting-Response
